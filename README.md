@@ -54,35 +54,56 @@ Inspeção da estrutura da base, verificação de valores ausentes e duplicidade
 
 ### 2. Criação de indicadores
 
-Foram desenvolvidas métricas para facilitar a comparação do desempenho entre times e temporadas.
+Foram criados indicadores para comparar o desempenho dos times ao longo das temporadas do Campeonato Brasileiro Série A.
 
-**Percentual de vitórias**
+### Percentual de vitórias
 
-Percentual de partidas disputadas que terminaram em vitória.
+Representa a proporção de partidas disputadas que terminaram em vitória.
 
-\[
-\text{Vitórias (\%)}=\frac{\text{Vitórias}}{\text{Partidas}}\times100
-\]
+**Como calcular:**
 
-**Média de gols marcados por partida**
+`Percentual de vitórias = (Vitórias ÷ Partidas disputadas) × 100`
 
-\[
-\text{Média de gols marcados}=\frac{\text{Gols marcados}}{\text{Partidas}}
-\]
+**Exemplo:** um time que venceu 20 das 38 partidas disputadas teve um percentual de vitórias de **52,63%**.
 
-**Média de gols sofridos por partida**
+**O que esse indicador revela?** Permite comparar o desempenho dos times independentemente do número de partidas disputadas.
 
-\[
-\text{Média de gols sofridos}=\frac{\text{Gols sofridos}}{\text{Partidas}}
-\]
+### Média de gols marcados por partida
 
-**Aproveitamento de pontos**
+Indica quantos gols, em média, um time marcou por jogo.
 
-\[
-\text{Aproveitamento (\%)}=\frac{\text{Pontos}}{3\times\text{Partidas}}\times100
-\]
+**Como calcular:**
 
-O aproveitamento considera o sistema de três pontos por vitória e utiliza a pontuação registrada na base.
+`Média de gols marcados = Gols marcados ÷ Partidas disputadas`
+
+**Exemplo:** um time que marcou 60 gols em 38 partidas teve uma média de **1,58 gol por partida**.
+
+**O que esse indicador revela?** Ajuda a avaliar a eficiência ofensiva das equipes.
+
+### Média de gols sofridos por partida
+
+Indica quantos gols, em média, um time sofreu por jogo.
+
+**Como calcular:**
+
+`Média de gols sofridos = Gols sofridos ÷ Partidas disputadas`
+
+**Exemplo:** um time que sofreu 30 gols em 38 partidas teve uma média de **0,79 gol sofrido por partida**.
+
+**O que esse indicador revela?** Permite comparar o desempenho defensivo das equipes. Em geral, quanto menor o valor, melhor o desempenho defensivo.
+
+### Aproveitamento de pontos
+
+Representa o percentual de pontos conquistados em relação ao máximo de pontos possíveis, considerando o sistema de três pontos por vitória.
+
+**Como calcular:**
+
+`Aproveitamento (%) = (Pontos conquistados ÷ (3 × Partidas disputadas)) × 100`
+
+**Exemplo:** um time que conquistou 70 pontos em 38 partidas teve um aproveitamento de **61,40%**.
+
+**O que esse indicador revela?** Mostra quanto do total de pontos disponíveis foi conquistado pela equipe.
+
 
 ### 3. Análise exploratória e comparativa
 
